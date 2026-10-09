@@ -235,7 +235,9 @@ Makefile              Common development commands
 
 The root `render.yaml` defines separate free Docker web services for the API and Streamlit UI. The API seeds its synthetic SQLite database at startup, and the policy embedding model and index are prepared in the image. The UI connects to the API using Render's service-host reference. The deployment uses the mock LLM and keeps ticket actions disabled; no provider key is required.
 
-Create a Blueprint from this repository in Render and confirm that both services use the **Free** plan. Free services spin down after inactivity, their local filesystem is ephemeral, and the API is public because Free services do not support private networking. This setup is for a portfolio demo with synthetic data, not production use; SQLite contents are reseeded after restarts.
+**Live demo:** [Open the Streamlit UI](https://ops-copilot-ui-wwyq.onrender.com/). Smoke-tested with “What is the return window?”; the page displayed the `rag_search` plan, tool output, and `returns.md` evidence. The [API health check](https://ops-copilot-api-x840.onrender.com/health) returns `{"status":"ok"}`.
+
+Both services use Render's **Free** plan. Free services spin down after inactivity, so a request may take 50 seconds or more while the instance wakes; local filesystems are ephemeral, and the API is public because Free services do not support private networking. This setup is for a portfolio demo with synthetic data, not production use; SQLite contents are reseeded after restarts.
 
 ## GitHub
 
