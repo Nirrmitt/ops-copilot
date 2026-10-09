@@ -28,7 +28,7 @@ See [docs/architecture.md](docs/architecture.md) for notes about the flow.
 
 ## Quick start
 
-From the `ops-copilot` folder, run these five commands:
+From the `ops-copilot` folder, run these commands:
 
 ```powershell
 python -m venv .venv
