@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ops-copilot"
+version = "0.1.0"
+description = "A safe, beginner-readable retail operations assistant"
+requires-python = ">=3.11"
+dependencies = [
+  "langgraph>=0.2,<1", "fastapi>=0.115", "uvicorn[standard]>=0.30",
+  "pydantic>=2.8", "sqlalchemy>=2.0", "psycopg[binary]>=3.2",
+  "openai>=1.40", "chromadb>=0.5", "sentence-transformers>=3.0",
+  "streamlit>=1.38", "python-dotenv>=1.0", "httpx>=0.27"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3", "pytest-asyncio>=0.24", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

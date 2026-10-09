@@ -1,0 +1,15 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.chroma/
+.model-cache/
+chroma_db/
+data/volumes/
+*.log
+data/*.db
+.pip-tmp/
