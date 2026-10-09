@@ -1,0 +1,10 @@
+.env
+.env.*
+.git
+.venv
+__pycache__
+*.py[cod]
+.chroma
+.model-cache
+data/ops.db
+data/ops.db-*

@@ -231,6 +231,12 @@ Makefile              Common development commands
 5. Store provider credentials and database connection strings in Azure Key Vault, then reference them as Container App secrets.
 6. Configure network access, logs, monitoring, and an approved ticket webhook before enabling actions.
 
+## Render demo deployment
+
+The root `render.yaml` defines separate free Docker web services for the API and Streamlit UI. The API seeds its synthetic SQLite database at startup, and the policy embedding model and index are prepared in the image. The UI connects to the API using Render's service-host reference. The deployment uses the mock LLM and keeps ticket actions disabled; no provider key is required.
+
+Create a Blueprint from this repository in Render and confirm that both services use the **Free** plan. Free services spin down after inactivity, their local filesystem is ephemeral, and the API is public because Free services do not support private networking. This setup is for a portfolio demo with synthetic data, not production use; SQLite contents are reseeded after restarts.
+
 ## GitHub
 
 Create an empty repository, then from this project folder run the following commands (replace the username):

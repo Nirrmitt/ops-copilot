@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: ops-copilot-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    dockerCommand: python -m app.render_start
+    healthCheckPath: /health
+    envVars:
+      - key: LLM_PROVIDER
+        value: mock
+      - key: DATABASE_URL
+        value: sqlite:///data/ops.db
+      - key: CHROMA_PATH
+        value: /app/.chroma
+      - key: ALLOW_TICKET_ACTIONS
+        value: "false"
+  - type: web
+    name: ops-copilot-ui
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    dockerCommand: streamlit run ui/streamlit_app.py --server.address=0.0.0.0 --server.port=10000
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: API_BASE_URL
+        fromService:
+          type: web
+          name: ops-copilot-api
+          property: host

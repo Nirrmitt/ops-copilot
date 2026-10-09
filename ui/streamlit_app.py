@@ -11,7 +11,13 @@ confirmed = st.checkbox("I confirm any requested ticket action")
 if st.button("Ask", type="primary") and question.strip():
     try:
         api_base = os.getenv("API_BASE_URL", "http://localhost:8000")
-        response = httpx.post(f"{api_base}/ask", json={"question": question, "confirm": confirmed}, timeout=60)
+        if "://" not in api_base:
+            api_base = f"https://{api_base}"
+        response = httpx.post(
+            f"{api_base.rstrip('/')}/ask",
+            json={"question": question, "confirm": confirmed},
+            timeout=120,
+        )
         response.raise_for_status(); result = response.json()
         st.subheader("Plan"); st.json(result["plan"])
         st.subheader("Tool calls and results")
