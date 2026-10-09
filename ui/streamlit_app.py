@@ -12,6 +12,8 @@ if st.button("Ask", type="primary") and question.strip():
     try:
         api_base = os.getenv("API_BASE_URL", "http://localhost:8000")
         if "://" not in api_base:
+            if "." not in api_base:
+                api_base = f"{api_base}.onrender.com"
             api_base = f"https://{api_base}"
         response = httpx.post(
             f"{api_base.rstrip('/')}/ask",
