@@ -43,6 +43,14 @@ flowchart LR
 
 The synthesizer formats tool outputs instead of generating unsupported factual claims. Policy results include the source document and chunk ID; SQL results include the executed, guarded SQL. See [the architecture notes](docs/architecture.md) for more detail.
 
+### Streamlit demo
+
+These local mock-mode screenshots show the planned tool call, returned tool evidence, and cited sources.
+
+![Streamlit plan and tool call](docs/streamlit-demo-plan.png)
+
+![Streamlit evidence and sources](docs/streamlit-demo-evidence.png)
+
 ### The three tools
 
 1. **`rag_search`** retrieves passages from seven synthetic store policies covering returns, shipping, warranty, escalation, order changes, price matching, and privacy.
@@ -112,6 +120,7 @@ Run the checks and evaluation from the repository root. Use the virtual-environm
 ```
 
 The harness reports tool-routing accuracy, SQL result-set accuracy against reference SQL, RAG Recall@4 against labeled source files, faithfulness, abstention/handoff, end-to-end success, graph steps, latency percentiles, and cost per query. It saves JSON and Markdown under [`eval/results/`](eval/results/). In mock mode, faithfulness uses a deterministic lexical proxy and cost is $0. In real-provider mode, faithfulness uses an LLM judge; set the optional model token-price variables to estimate cost.
+The runner evaluates all development cases before the 12 holdout cases. Its JSON output includes per-case outcomes and failure categories, but not question text.
 
 ### Recorded mock run
 
@@ -136,6 +145,30 @@ These figures come from the run saved in `eval/results/mock.json` on 2026-10-09.
 | Mock full agent | 0.98 | End-to-end: 0.96 |
 
 The baselines are intentionally lightweight deterministic comparisons, not separate model calls. Treat these scores as a reproducible engineering smoke evaluation, not a statistically rigorous benchmark.
+
+### Recorded real OpenRouter run
+
+These are the results from `eval/results/real.json`, recorded on 2026-10-09 with `openai/gpt-4o-mini` through OpenRouter. The 38 development cases ran first and the 12 holdouts ran last; no prompt or routing changes were made after seeing the holdout results.
+
+| Metric | Real result |
+|---|---:|
+| Tool-routing accuracy | 0.38 |
+| SQL execution accuracy (25 labeled cases) | 0.00 |
+| RAG Recall@4 (25 labeled cases) | 0.96 |
+| Faithfulness (LLM judge) | 0.488 |
+| Correct abstention / handoff | 0.38 |
+| End-to-end success | 0.10 |
+| Average graph steps | 3.46 |
+| p50 / p95 latency | 1,256.75 ms / 2,353.87 ms |
+| Tokens (prompt / completion) | 52,054 / 1,554 |
+| Cost per query | Not reported (token prices were not configured) |
+
+| Split | Queries | Tool routing | Correct handoff | End-to-end success |
+|---|---:|---:|---:|---:|
+| Development | 38 | 0.3684 | 0.3684 | 0.1053 |
+| Holdout (final) | 12 | 0.4167 | 0.4167 | 0.0833 |
+
+The live-model run performed substantially worse than the deterministic mock. The failure log describes the routing refusals, SQL schema mismatches, and the one labeled source missed by retrieval. RAG recall is measured separately from whether the planner actually invoked the retrieval tool. Faithfulness is an LLM-judge score, not a human-validated factuality rate.
 
 ## Safety and engineering choices
 

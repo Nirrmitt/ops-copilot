@@ -1,0 +1,1165 @@
+{
+  "mode": "openai",
+  "queries": 50,
+  "tool_routing_accuracy": 0.38,
+  "sql_execution_accuracy": 0.0,
+  "sql_cases": 25,
+  "rag_recall_at_4": 0.96,
+  "rag_cases": 25,
+  "faithfulness": 0.488,
+  "correct_abstention_handoff_rate": 0.38,
+  "end_to_end_success_rate": 0.1,
+  "average_steps": 3.46,
+  "latency_ms_p50": 1256.75,
+  "latency_ms_p95": 2353.87,
+  "token_usage": {
+    "prompt_tokens": 52054,
+    "completion_tokens": 1554
+  },
+  "cost_per_query_usd": "not configured",
+  "case_results": [
+    {
+      "id": "q01",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q02",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q03",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q05",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q06",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q07",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.9,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q09",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q10",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q11",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q13",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q14",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q15",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q17",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [
+        {
+          "tool": "sql_query",
+          "error": "(sqlite3.OperationalError) no such column: created_at\n[SQL: SELECT status FROM orders ORDER BY created_at DESC LIMIT 100]\n(Background on this error at: https://sqlalche.me/e/21/e3q8)"
+        }
+      ],
+      "execution_error": null,
+      "failure_categories": [
+        "handoff",
+        "tool_execution",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q18",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [
+        {
+          "tool": "sql_query",
+          "error": "(sqlite3.OperationalError) no such column: product_name\n[SQL: SELECT product_name, price FROM products LIMIT 100]\n(Background on this error at: https://sqlalche.me/e/21/e3q8)"
+        }
+      ],
+      "execution_error": null,
+      "failure_categories": [
+        "handoff",
+        "tool_execution",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q19",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q21",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q22",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q23",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q25",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q26",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.5,
+      "tool_failures": [
+        {
+          "tool": "sql_query",
+          "error": "(sqlite3.OperationalError) no such column: total\n[SQL: SELECT SUM(total) as order_total FROM orders LIMIT 100]\n(Background on this error at: https://sqlalche.me/e/21/e3q8)"
+        }
+      ],
+      "execution_error": null,
+      "failure_categories": [
+        "handoff",
+        "tool_execution",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q27",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q29",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q30",
+      "split": "dev",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [
+        {
+          "tool": "sql_query",
+          "error": "(sqlite3.OperationalError) no such column: sale_date\n[SQL: SELECT * FROM orders ORDER BY sale_date DESC LIMIT 100]\n(Background on this error at: https://sqlalche.me/e/21/e3q8)"
+        }
+      ],
+      "execution_error": null,
+      "failure_categories": [
+        "handoff",
+        "tool_execution",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q31",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [
+        {
+          "tool": "sql_query",
+          "error": "(sqlite3.OperationalError) no such column: order_date\n[SQL: SELECT * FROM orders ORDER BY order_date DESC LIMIT 100]\n(Background on this error at: https://sqlalche.me/e/21/e3q8)"
+        }
+      ],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff",
+        "tool_execution",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q33",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q34",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [
+        {
+          "tool": "sql_query",
+          "error": "(sqlite3.OperationalError) no such column: created_at\n[SQL: SELECT * FROM orders ORDER BY created_at DESC LIMIT 100]\n(Background on this error at: https://sqlalche.me/e/21/e3q8)"
+        }
+      ],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff",
+        "tool_execution",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q35",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q37",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [
+        {
+          "tool": "sql_query",
+          "error": "(sqlite3.OperationalError) no such column: total\n[SQL: SELECT total FROM orders LIMIT 100]\n(Background on this error at: https://sqlalche.me/e/21/e3q8)"
+        }
+      ],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff",
+        "tool_execution",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q38",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q39",
+      "split": "dev",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q41",
+      "split": "dev",
+      "expected_tools": [
+        "create_ticket"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q42",
+      "split": "dev",
+      "expected_tools": [
+        "create_ticket"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q43",
+      "split": "dev",
+      "expected_tools": [
+        "create_ticket"
+      ],
+      "actual_tools": [
+        "create_ticket",
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q45",
+      "split": "dev",
+      "expected_tools": [
+        "create_ticket"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q46",
+      "split": "dev",
+      "expected_tools": [],
+      "actual_tools": [],
+      "expected_handoff": true,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [],
+      "end_to_end_success": true
+    },
+    {
+      "id": "q47",
+      "split": "dev",
+      "expected_tools": [],
+      "actual_tools": [],
+      "expected_handoff": true,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [],
+      "end_to_end_success": true
+    },
+    {
+      "id": "q49",
+      "split": "dev",
+      "expected_tools": [],
+      "actual_tools": [],
+      "expected_handoff": true,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [],
+      "end_to_end_success": true
+    },
+    {
+      "id": "q50",
+      "split": "dev",
+      "expected_tools": [],
+      "actual_tools": [],
+      "expected_handoff": true,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [],
+      "end_to_end_success": true
+    },
+    {
+      "id": "q04",
+      "split": "holdout",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q08",
+      "split": "holdout",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q12",
+      "split": "holdout",
+      "expected_tools": [
+        "rag_search"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": 0.0,
+      "missing_sources": [
+        "escalation.md"
+      ],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff",
+        "rag_recall"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q16",
+      "split": "holdout",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [
+        {
+          "tool": "sql_query",
+          "error": "(sqlite3.OperationalError) no such column: order_date\n[SQL: SELECT * FROM orders ORDER BY order_date DESC LIMIT 100]\n(Background on this error at: https://sqlalche.me/e/21/e3q8)"
+        }
+      ],
+      "execution_error": null,
+      "failure_categories": [
+        "handoff",
+        "tool_execution",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q20",
+      "split": "holdout",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q24",
+      "split": "holdout",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q28",
+      "split": "holdout",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q32",
+      "split": "holdout",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 0.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q36",
+      "split": "holdout",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [
+        "sql_query"
+      ],
+      "expected_handoff": false,
+      "actual_handoff": false,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q40",
+      "split": "holdout",
+      "expected_tools": [
+        "rag_search",
+        "sql_query"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": false,
+      "rag_recall_at_4": 1.0,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff",
+        "sql_accuracy"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q44",
+      "split": "holdout",
+      "expected_tools": [
+        "create_ticket"
+      ],
+      "actual_tools": [],
+      "expected_handoff": false,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [
+        "tool_routing",
+        "handoff"
+      ],
+      "end_to_end_success": false
+    },
+    {
+      "id": "q48",
+      "split": "holdout",
+      "expected_tools": [],
+      "actual_tools": [],
+      "expected_handoff": true,
+      "actual_handoff": true,
+      "sql_correct": null,
+      "rag_recall_at_4": null,
+      "missing_sources": [],
+      "faithfulness": 1.0,
+      "tool_failures": [],
+      "execution_error": null,
+      "failure_categories": [],
+      "end_to_end_success": true
+    }
+  ],
+  "baselines": {
+    "plain_llm_no_tools_mock": {
+      "tool_routing_accuracy": 0.1
+    },
+    "rag_only_mock": {
+      "tool_routing_accuracy": 0.3,
+      "rag_recall_at_4": 0.96
+    },
+    "full_agent_real": {
+      "tool_routing_accuracy": 0.38,
+      "end_to_end_success_rate": 0.1
+    }
+  }
+}
