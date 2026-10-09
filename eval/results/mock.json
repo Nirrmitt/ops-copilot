@@ -1,0 +1,33 @@
+{
+  "mode": "mock",
+  "queries": 50,
+  "tool_routing_accuracy": 0.98,
+  "sql_execution_accuracy": 1.0,
+  "sql_cases": 25,
+  "rag_recall_at_4": 0.96,
+  "rag_cases": 25,
+  "faithfulness": 0.7888,
+  "correct_abstention_handoff_rate": 0.98,
+  "end_to_end_success_rate": 0.96,
+  "average_steps": 3.9,
+  "latency_ms_p50": 19.99,
+  "latency_ms_p95": 23.62,
+  "token_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0
+  },
+  "cost_per_query_usd": 0.0,
+  "baselines": {
+    "plain_llm_no_tools_mock": {
+      "tool_routing_accuracy": 0.1
+    },
+    "rag_only_mock": {
+      "tool_routing_accuracy": 0.3,
+      "rag_recall_at_4": 0.96
+    },
+    "full_agent_mock": {
+      "tool_routing_accuracy": 0.98,
+      "end_to_end_success_rate": 0.96
+    }
+  }
+}
