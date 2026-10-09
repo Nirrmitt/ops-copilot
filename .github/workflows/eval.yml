@@ -1,0 +1,15 @@
+name: Mock evaluation
+on: [workflow_dispatch, push]
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    env: {LLM_PROVIDER: mock}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11', cache: pip}
+      - run: pip install -e ".[dev]"
+      - run: python -m app.seed
+      - run: python -m eval.run_eval
+      - uses: actions/upload-artifact@v4
+        with: {name: evaluation-results, path: eval/results/}
