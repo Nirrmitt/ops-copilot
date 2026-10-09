@@ -33,12 +33,11 @@ From the `ops-copilot` folder, run these five commands:
 ```powershell
 python -m venv .venv
 python -m pip install -e ".[dev]"
-Copy-Item .env.example .env
 python -m app.seed
 uvicorn app.api:app --reload
 ```
 
-The defaults use a deterministic mock planner and a local SQLite dataset. Open `http://localhost:8000/docs` to try `/ask`. Start the optional UI in a second terminal with `streamlit run ui/streamlit_app.py`. Policy search uses ChromaDB and the `all-MiniLM-L6-v2` SentenceTransformers model, which may need to download its model the first time it runs.
+These commands work in PowerShell, macOS, and Linux shells. The defaults use a deterministic mock planner and a local SQLite dataset, so `.env` is optional for the quick start. To add settings, copy `.env.example` to `.env` with your platform's copy command and edit it. Open `http://localhost:8000/docs` to try `/ask`. Start the optional UI in a second terminal with `streamlit run ui/streamlit_app.py`. Policy search uses ChromaDB and the `all-MiniLM-L6-v2` SentenceTransformers model, which may need to download its model the first time it runs.
 
 ## Environment variables
 
@@ -84,7 +83,7 @@ Evaluation artifacts are written under `eval/results/`. Set both model pricing v
 - SQL is rejected unless it is a single SELECT, and results are limited to 100 rows. SQLite is used for the one-command local setup; Docker Compose provides PostgreSQL for integration work.
 - Policy chunks are indexed locally by ChromaDB. Initial SentenceTransformers model setup may download model weights.
 - A ticket action requires both a per-request `confirm=true` and `ALLOW_TICKET_ACTIONS=true`; the endpoint must itself be configured and trusted.
-- The verifier is a simple evidence-overlap check in this portfolio sample. It is not a proof of factual correctness.
+- The verifier checks tool success and that evidence was returned before accepting a response. The synthesizer formats raw tool output, which avoids adding unsupported generated claims, but this is not a proof of factual correctness.
 
 ## Known limitations
 
